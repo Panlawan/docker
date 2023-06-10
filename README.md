@@ -27,20 +27,28 @@ the terminal show hash password example is `$2b$08$X8stDRyPOvBU6KCSEi5j8uWeETKA5
       },
       ```
   6. restart nodered service 
-      - `sudo docker compose down`
-      - `sudo docker compose up -d`
 --------------------------------------------------------------------------------------------------------------
 
 # Influxdb Config
-1. `sudo docker exec -it user-influxdb sh`
-2. `influx`
-3. `create database mydb`
-4. `auth` Settings username and password
-5. `exit`
+first influxdb.conf comment in line 263  
+```
+  #Determines whether user authentication is enabled over HTTP/HTTPS.
+  #auth-enabled = true #<------
+```
+2. `sudo docker exec -it user-influxdb sh`
+3. `influx`
+4. `create database mydb`
+5. `CREATE USER "admin" WITH PASSWORD 'admin_passwd' WITH ALL PRIVILEGES`
 6. `exit`
-7. restart influxdb service
-      - `sudo docker compose down`
-      - `sudo docker compose up -d`
+7. `exit`
+8. On influxdb.conf Uncomment in line 263
+```
+  #Determines whether user authentication is enabled over HTTP/HTTPS.
+  auth-enabled = true #<------
+```
+9. restart influxdb service
+
+
 --------------------------------------------------------------------------------------------------------------
 
 # mqtt Config
@@ -51,5 +59,3 @@ eample is `> mosquitto_passwd -b /mosquitto/config/password_file admin 12345678`
 
 3. `exit`
 4. restart mqtt service
-      - `sudo docker compose down`
-      - `sudo docker compose up -d`
