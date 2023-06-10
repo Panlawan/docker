@@ -21,11 +21,7 @@ services:
     ports:
       - 8086:8086
     volumes:
-      # - ./influxdb_data:/var/lib/influxdb
-      # - ./influxdb_data:/etc/influxdb/
       - ./influxdb/config:/etc/influxdb/
-      # - ./influxdb/data:/var/lib/influxdb # Mount for influxdb data directory
-      # - ./influxdb/config/:/etc/influxdb/influxdb.conf # Mount for influxdb configuration
     restart: always
     networks:
       - networkName
