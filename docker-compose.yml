@@ -1,0 +1,111 @@
+version: "3"
+services:
+  nodered:
+    container_name: user-nodered
+    image: nodered/node-red
+    restart: always
+    ports:
+      - 1880:1880
+    volumes:
+      - ./nodered:/data
+    depends_on:
+      - influxdb
+      - db
+      - mosquitto
+    networks:
+      - networkName
+
+  influxdb:
+    container_name: user-influxdb
+    image: influxdb:1.8.10
+    ports:
+      - 8086:8086
+    volumes:
+      # - ./influxdb_data:/var/lib/influxdb
+      # - ./influxdb_data:/etc/influxdb/
+      - ./influxdb/config:/etc/influxdb/
+      # - ./influxdb/data:/var/lib/influxdb # Mount for influxdb data directory
+      # - ./influxdb/config/:/etc/influxdb/influxdb.conf # Mount for influxdb configuration
+    restart: always
+    networks:
+      - networkName
+
+  grafana:
+    container_name: user-grafana
+    image: grafana/grafana
+    ports:
+      - 3000:3000
+    depends_on:
+      - influxdb
+      - db
+    restart: always
+    networks:
+      - networkName
+
+  php-apache-environment:
+    container_name: user-php-apache
+    restart: always
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    volumes:
+      - ./php/src:/var/www/html/
+    ports:
+      - 8080:80
+    networks:
+      - networkName
+
+  db:
+    container_name: user-db
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345678
+      MYSQL_USER: user
+      MYSQL_PASSWORD: 12345678
+    ports:
+      - 3306:3306
+    networks:
+      - networkName
+
+  phpmyadmin:
+    container_name: user-myadmin
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - 8000:80
+    environment:
+      PMA_HOST: db
+    depends_on:
+      - db
+    networks:
+      - networkName
+
+  adminer:
+    container_name: user-adminer
+    image: adminer:latest
+    restart: always
+    environment:
+      ADMINER_DEFAULT_SERVER: db
+    ports:
+      - 8888:8080
+    networks:
+      - networkName
+
+  mosquitto:
+    image: eclipse-mosquitto:1.6.9
+    volumes:
+      - ./mosquitto/config:/mosquitto/config/
+      - ./mosquitto/password_file:/mosquitto/config/
+    container_name: user-mosquitto
+    restart: always
+    ports:
+      - 1883:1883
+      - 9001:9001
+    networks:
+      - networkName
+    
+networks:
+  networkName:
