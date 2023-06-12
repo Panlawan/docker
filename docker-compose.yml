@@ -28,9 +28,15 @@ services:
 
   grafana:
     container_name: user-grafana
-    image: grafana/grafana
+    build:
+      context: ./grafana
+      dockerfile: Dockerfile
+    # image: grafana/grafana-enterprise
     ports:
       - 3000:3000
+    volumes:
+      - grafana_data:/var/lib/grafana
+
     depends_on:
       - influxdb
       - db
@@ -102,6 +108,9 @@ services:
       - 9001:9001
     networks:
       - networkName
-    
+
+volumes:
+  grafana_data: {}
+
 networks:
   networkName:
