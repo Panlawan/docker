@@ -27,6 +27,7 @@ copy to file on /nodered/setting.js
       }]
     },
 ```
+
 restart nodered service 
 --------------------------------------------------------------------------------------------------------------
 
@@ -52,7 +53,8 @@ On influxdb.conf Uncomment in line 263
   #Determines whether user authentication is enabled over HTTP/HTTPS.
   auth-enabled = true #<------
 ```
-Then restart influxdb service
+
+restart influxdb service
 
 --------------------------------------------------------------------------------------------------------------
 
