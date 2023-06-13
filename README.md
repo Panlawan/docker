@@ -60,10 +60,14 @@ Then restart influxdb service
 ```
 $ sudo docker exec -it user-mosquitto sh
 $ mosquitto_passwd -b /mosquitto/config/password_file user pass
+$ exit
 ```
 
 eample is `> mosquitto_passwd -b /mosquitto/config/password_file admin 12345678`
-
-`$ exit`
-
 Then restart mqtt service
+
+
+# Restart Docker compose 
+```
+$ docker compose restart
+```
