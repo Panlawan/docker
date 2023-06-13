@@ -3,17 +3,18 @@ https://learn.microsoft.com/en-gb/windows/wsl/install-manual#step-4---download-t
 
 # First download on command and up docker compose
 ```
-git clone https://github.com/woeis-me/docker.git
-cd docker
-sudo service docker start
-sudo docker compose up -d
+$ git clone https://github.com/woeis-me/docker.git
+$ cd docker
+$ sudo service docker start
+$ sudo docker compose up -d
 ```
 # Node-Red Config
-  1. `sudo apt-get install npm`
-  2. `sudo npm install -g node-red-admin`
-  3. `sudo docker exec -it user-nodered sh`
-  4. `npx node-red admin hash-pw`
-    
+```  
+$ sudo apt-get install npm
+$ sudo npm install -g node-red-admin
+$ sudo docker exec -it user-nodered sh
+$ npx node-red admin hash-pw
+```    
 the terminal show hash password example is `$2b$08$X8stDRyPOvBU6KCSEi5j8uWeETKA5OKLvegXRnHf3hRUCV7MU2P72`
   
   5. copy to file on /nodered/setting.js 
