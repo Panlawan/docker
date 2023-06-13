@@ -9,15 +9,8 @@ FROM grafana/grafana-enterprise
 # Install plugins here our in your own config file
 # ENV GF_INSTALL_PLUGINS="<list of plugins seperated by ,"
 
-# Add provisioning
 # COPY ./provisioning /etc/grafana/provisioning
-# # Add configuration file
-# ADD ./grafana.ini /etc/grafana/grafana.ini
-# # Add dashboard json files
-# ADD ./dashboards /etc/grafana/dashboards
-
-COPY ./provisioning /etc/grafana/provisioning
 # COPY configuration file
 COPY ./grafana.ini /etc/grafana/grafana.ini
 # COPY dashboard json files
-COPY ./dashboards /etc/grafana/dashboards
+# COPY ./dashboards /etc/grafana/dashboards
