@@ -2,11 +2,12 @@
 https://learn.microsoft.com/en-gb/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
 
 # First download on command and up docker compose
-1. `git clone https://github.com/woeis-me/docker.git`
-2. `cd docker`
-3. `sudo service docker start`
-4. `sudo docker compose up -d`
-
+```
+git clone https://github.com/woeis-me/docker.git
+cd docker
+sudo service docker start
+sudo docker compose up -d
+```
 # Node-Red Config
   1. `sudo apt-get install npm`
   2. `sudo npm install -g node-red-admin`
