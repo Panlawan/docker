@@ -29,6 +29,7 @@ copy to file on /nodered/setting.js
 ```
 
 restart nodered service 
+
 --------------------------------------------------------------------------------------------------------------
 
 # Influxdb Config
