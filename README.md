@@ -3,10 +3,9 @@ https://learn.microsoft.com/en-gb/windows/wsl/install-manual#step-4---download-t
 
 # First download on command and up docker compose
 ```
-$ git clone https://github.com/woeis-me/docker.git
-$ cd docker
-$ sudo service docker start
-$ sudo docker compose up -d
+`(1)` $ git clone https://github.com/woeis-me/docker.git
+`(2)`$ cd docker
+`(3)`$ sudo docker compose up -d
 ```
 # Node-Red Config
 ```  
