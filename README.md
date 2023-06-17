@@ -74,3 +74,7 @@ Then restart mqtt service
 ```
 $ docker compose restart
 ```
+
+
+# Line Sticker id links
+https://developers.line.biz/en/docs/messaging-api/sticker-list/#sticker-definitions
