@@ -21,8 +21,8 @@ unset($_SESSION['admin_login']);
     <div class="container">
         <h3 class="mt-4">Login</h3>
         <hr>
-        <form action="signin_db.php" method="post">
-            <form action="signin_db.php" method="post">
+        <form action="login_db.php" method="post">
+            <form action="login_db.php" method="post">
                 <?php if (isset($_SESSION['error'])) { ?>
                     <div class="alert alert-danger" role="alert">
                         <?php
@@ -47,7 +47,7 @@ unset($_SESSION['admin_login']);
                     <label for="password" class="form-label">Password</label>
                     <input type="password" class="form-control" name="password">
                 </div>
-                <button type="submit" name="signin" class="btn btn-primary">Sign In</button>
+                <button type="submit" name="login" class="btn btn-primary">Sign In</button>
             </form>
             <hr>
             <p>ยังไม่เป็นสมาชิกใช่ไหม คลิ๊กที่นี่เพื่อ <a href="index.php">สมัครสมาชิก</a></p>

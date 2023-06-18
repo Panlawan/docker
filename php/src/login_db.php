@@ -1,9 +1,9 @@
 <?php
 
 session_start();
-require_once 'config/db.php';
+require_once 'db_config/db.php';
 
-if (isset($_POST['signin'])) {
+if (isset($_POST['login'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
@@ -34,22 +34,22 @@ if (isset($_POST['signin'])) {
                     if (password_verify($password, $row['password'])) {
                         if ($row['urole'] == 'admin') {
                             $_SESSION['admin_login'] = $row['id'];
-                            header("location: admin.php");
+                            header("location: downloads/admin.php");
                         } else {
                             $_SESSION['user_login'] = $row['id'];
-                            header("location: user.php");
+                            header("location: downloads/user.php");
                         }
                     } else {
                         $_SESSION['error'] = 'รหัสผ่านผิด';
-                        header("location: signin.php");
+                        header("location: login.php");
                     }
                 } else {
                     $_SESSION['error'] = 'อีเมลผิด';
-                    header("location: signin.php");
+                    header("location: login.php");
                 }
             } else {
                 $_SESSION['error'] = "ไม่มีข้อมูลในระบบ";
-                header("location: signin.php");
+                header("location: login.php");
             }
         } catch (PDOException $e) {
             echo $e->getMessage();

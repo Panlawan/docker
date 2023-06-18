@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'config/db.php';
+require_once '../db_config/db.php';
 
 if (!isset($_SESSION['admin_login'])) {
     $_SESSION['error'] = 'กรุณาเข้าสู่ระบบ!';
@@ -112,11 +112,11 @@ if (!isset($_SESSION['admin_login'])) {
                 </div>
             </div>
         </div>
-    </div>
-
+    
+    <br><br>
     <h3 class="mt-4">Welcome Admin, <?php echo $row['firstname'] . ' ' . $row['lastname'] ?></h3>
     <a href="logout.php" class="btn btn-danger">Logout</a>
-
+    </div>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    require_once 'config/db.php';
+    require_once 'db_config/db.php';
     unset($_SESSION['user_login']);
     unset($_SESSION['admin_login']);
 ?>
@@ -20,6 +20,7 @@
 <body>
 
     <div class="container">
+        <br><br>
         <h3 class="mt-4">สมัครสมาชิก</h3>
         <hr>
         <form action="signup_db.php" method="post">
@@ -68,10 +69,10 @@
                 <label for="confirm password" class="form-label">Confirm Password</label>
                 <input type="password" class="form-control" name="c_password">
             </div>
-            <button type="submit" name="signup" class="btn btn-primary">Sign Up</button>
+            <button type="submit" name="register" class="btn btn-primary">Sign Up</button>
         </form>
         <hr>
-        <p>เป็นสมาชิกแล้วใช่ไหม คลิ๊กที่นี่เพื่อ <a href="signin.php">เข้าสู่ระบบ</a></p>
+        <p>เป็นสมาชิกแล้วใช่ไหม คลิ๊กที่นี่เพื่อ <a href="login.php">เข้าสู่ระบบ</a></p>
     </div>
     
 </body>

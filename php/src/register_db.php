@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once 'config/db.php';
-if (isset($_POST['signup'])) {
+require_once 'db_config/db.php';
+if (isset($_POST['register'])) {
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
     $email = $_POST['email'];
