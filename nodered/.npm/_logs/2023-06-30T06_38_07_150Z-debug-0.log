@@ -1,0 +1,97 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@8.19.4
+2 info using node@v16.20.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 2ms
+7 warn config production Use `--omit=dev` instead.
+8 timing config:load:cli Completed in 3ms
+9 timing config:load:env Completed in 0ms
+10 timing config:load:file:/data/.npmrc Completed in 0ms
+11 timing config:load:project Completed in 3ms
+12 timing config:load:file:/usr/src/node-red/.npmrc Completed in 0ms
+13 timing config:load:user Completed in 0ms
+14 timing config:load:file:/usr/local/etc/npmrc Completed in 3ms
+15 timing config:load:global Completed in 3ms
+16 timing config:load:validate Completed in 0ms
+17 timing config:load:credentials Completed in 1ms
+18 timing config:load:setEnvs Completed in 1ms
+19 timing config:load Completed in 16ms
+20 timing npm:load:configload Completed in 16ms
+21 timing npm:load:mkdirpcache Completed in 4ms
+22 timing npm:load:mkdirplogs Completed in 1ms
+23 verbose title npm install node-red-contrib-influxdb@0.6.1
+24 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--production" "--engine-strict" "node-red-contrib-influxdb@0.6.1"
+25 timing npm:load:setTitle Completed in 2ms
+26 timing config:load:flatten Completed in 4ms
+27 timing npm:load:display Completed in 6ms
+28 verbose logfile logs-max:10 dir:/data/.npm/_logs
+29 verbose logfile /data/.npm/_logs/2023-06-30T06_38_07_150Z-debug-0.log
+30 timing npm:load:logFile Completed in 6ms
+31 timing npm:load:timers Completed in 0ms
+32 timing npm:load:configScope Completed in 0ms
+33 timing npm:load Completed in 36ms
+34 timing arborist:ctor Completed in 1ms
+35 silly logfile start cleaning logs, removing 1 files
+36 silly logfile done cleaning log files
+37 timing idealTree:init Completed in 75ms
+38 timing idealTree:userRequests Completed in 1ms
+39 silly idealTree buildDeps
+40 silly fetch manifest node-red-contrib-influxdb@0.6.1
+41 timing arborist:ctor Completed in 1ms
+42 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-influxdb 591ms (cache miss)
+43 silly placeDep ROOT node-red-contrib-influxdb@0.6.1 OK for: node-red-project@0.0.1 want: 0.6.1
+44 silly fetch manifest influx@5.6.3
+45 silly fetch manifest @influxdata/influxdb-client@^1.8.0
+46 silly fetch manifest lodash@4.17.21
+47 http fetch GET 200 https://registry.npmjs.org/influx 250ms (cache miss)
+48 http fetch GET 200 https://registry.npmjs.org/lodash 640ms (cache miss)
+49 http fetch GET 200 https://registry.npmjs.org/@influxdata%2finfluxdb-client 1376ms (cache miss)
+50 timing idealTree:#root Completed in 1989ms
+51 silly placeDep ROOT @influxdata/influxdb-client@1.33.2 OK for: node-red-contrib-influxdb@0.6.1 want: ^1.8.0
+52 silly placeDep ROOT influx@5.6.3 OK for: node-red-contrib-influxdb@0.6.1 want: 5.6.3
+53 silly placeDep ROOT lodash@4.17.21 OK for: node-red-contrib-influxdb@0.6.1 want: 4.17.21
+54 timing idealTree:node_modules/node-red-contrib-influxdb Completed in 5ms
+55 timing idealTree:node_modules/@influxdata/influxdb-client Completed in 0ms
+56 timing idealTree:node_modules/influx Completed in 0ms
+57 timing idealTree:node_modules/lodash Completed in 0ms
+58 timing idealTree:buildDeps Completed in 1995ms
+59 timing idealTree:fixDepFlags Completed in 1ms
+60 timing idealTree Completed in 2076ms
+61 timing reify:loadTrees Completed in 2077ms
+62 timing reify:diffTrees Completed in 4ms
+63 silly reify moves {}
+64 timing reify:retireShallow Completed in 1ms
+65 timing reify:createSparse Completed in 4ms
+66 timing reify:trashOmits Completed in 0ms
+67 timing reify:loadBundles Completed in 0ms
+68 silly tarball no local data for lodash@https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz. Extracting by manifest.
+69 silly tarball no local data for influx@https://registry.npmjs.org/influx/-/influx-5.6.3.tgz. Extracting by manifest.
+70 silly tarball no local data for @influxdata/influxdb-client@https://registry.npmjs.org/@influxdata/influxdb-client/-/influxdb-client-1.33.2.tgz. Extracting by manifest.
+71 silly tarball no local data for node-red-contrib-influxdb@https://registry.npmjs.org/node-red-contrib-influxdb/-/node-red-contrib-influxdb-0.6.1.tgz. Extracting by manifest.
+72 http fetch GET 200 https://registry.npmjs.org/influx/-/influx-5.6.3.tgz 1581ms (cache miss)
+73 timing reifyNode:node_modules/influx Completed in 1593ms
+74 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-influxdb/-/node-red-contrib-influxdb-0.6.1.tgz 1590ms (cache miss)
+75 timing reifyNode:node_modules/node-red-contrib-influxdb Completed in 1603ms
+76 http fetch GET 200 https://registry.npmjs.org/@influxdata/influxdb-client/-/influxdb-client-1.33.2.tgz 1694ms (cache miss)
+77 timing reifyNode:node_modules/@influxdata/influxdb-client Completed in 1706ms
+78 http fetch GET 200 https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz 1724ms (cache miss)
+79 timing reifyNode:node_modules/lodash Completed in 1735ms
+80 timing reify:unpack Completed in 1735ms
+81 timing reify:unretire Completed in 0ms
+82 timing build:queue Completed in 0ms
+83 timing build:deps Completed in 1ms
+84 timing build Completed in 1ms
+85 timing reify:build Completed in 2ms
+86 timing reify:trash Completed in 0ms
+87 timing reify:save Completed in 15ms
+88 timing reify Completed in 3854ms
+89 silly ADD node_modules/lodash
+90 silly ADD node_modules/influx
+91 silly ADD node_modules/@influxdata/influxdb-client
+92 silly ADD node_modules/node-red-contrib-influxdb
+93 timing command:install Completed in 3859ms
+94 verbose exit 0
+95 timing npm Completed in 3994ms
+96 info ok

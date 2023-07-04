@@ -22,9 +22,9 @@ unset($_SESSION['admin_login']);
         <h3 class="mt-4">Login</h3>
         <hr>
         <form action="login_db.php" method="post">
-            <form action="login_db.php" method="post">
-                <?php if (isset($_SESSION['error'])) { ?>
-                    <div class="alert alert-danger" role="alert">
+        
+            <?php if (isset($_SESSION['error'])) { ?>
+                <div class="alert alert-danger" role="alert">
                         <?php
                         echo $_SESSION['error'];
                         unset($_SESSION['error']);

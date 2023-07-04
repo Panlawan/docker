@@ -3,23 +3,38 @@
 session_start();
 require_once 'db_config/db.php';
 
+
+
 if (isset($_POST['login'])) {
+
+    // Check if email and password are empty
+    if (empty($_POST['email'])) {
+        $_SESSION['error'] = "Please enter your email.";
+        header("location: login.php");
+    } 
+
+    if (empty($_POST['password'])) {
+        $_SESSION['error'] = "Please enter your password.";
+        header("location: login.php");
+    } 
+
+
     $email = $_POST['email'];
     $password = $_POST['password'];
 
 
     if (empty($email)) {
         $_SESSION['error'] = 'กรุณากรอกอีเมล';
-        header("location: signin.php");
+        header("location: login.php");
     } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $_SESSION['error'] = 'รูปแบบอีเมลไม่ถูกต้อง';
-        header("location: signin.php");
+        header("location: login.php");
     } else if (empty($password)) {
         $_SESSION['error'] = 'กรุณากรอกรหัสผ่าน';
-        header("location: signin.php");
+        header("location: login.php");
     } else if (strlen($_POST['password']) > 20 || strlen($_POST['password']) < 5) {
         $_SESSION['error'] = 'รหัสผ่านต้องมีความยาวระหว่าง 5 ถึง 20 ตัวอักษร';
-        header("location: signin.php");
+        header("location: login.php");
     } else {
         try {
 
