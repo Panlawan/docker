@@ -52,11 +52,7 @@ if (isset($_POST['register'])) {
                 $stmt->bindParam(":password", $passwordHash);
                 $stmt->bindParam(":urole", $urole);
                 $stmt->execute();
-                $_SESSION['success'] = "สมัครสมาชิกเรียบร้อยแล้ว! <a href='signin.php' class='alert-link'>คลิ๊กที่นี่</a> เพื่อเข้าสู่ระบบ";
-                // header('location: index.php');
-                // } else {
-                //     $_SESSION['error'] = "มีบางอย่างผิดพลาด";
-                //     header("location: index.php");
+                $_SESSION['success'] = "สมัครสมาชิกเรียบร้อยแล้ว! <a href='login.php' class='alert-link'>คลิ๊กที่นี่</a> เพื่อเข้าสู่ระบบ";
                 echo "<script>window.location.href = 'index.php';</script>";
             } else {
                 $_SESSION['error'] = "มีบางอย่างผิดพลาด";
