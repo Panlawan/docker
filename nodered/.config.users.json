@@ -34,6 +34,6 @@
                 "welcome": "3.0.2"
             }
         },
-        "menu-menu-item-sidebar": false
+        "menu-menu-item-sidebar": true
     }
 }
