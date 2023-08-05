@@ -4,7 +4,7 @@ import dht
 import ujson
 from umqtt.simple import MQTTClient
 import random
-
+import machine
 
 # MQTT Server Parameters
 MQTT_CLIENT_ID = "micropython-weather-demo"
@@ -17,6 +17,7 @@ DHT_PIN = 15
 
 blink_interval = 5000
 last_action_time = 0
+led = machine.Pin(27, machine.Pin.OUT)
 
 # Function to connect to Wi-Fi
 def connect_wifi(ssid, password):
@@ -41,6 +42,11 @@ def measure_weather():
 def sub_cb(topic, message):
     print("Received message from topic: ", topic)
     print("Message: ", message.decode('utf-8'))
+    if message.decode('utf-8') == "ON":
+      led.value(1)
+    else:
+      led.value(0)
+    
 
 def main():
     # Connect to Wi-Fi
