@@ -1,0 +1,150 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@8.19.4
+2 info using node@v16.20.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 2ms
+7 warn config production Use `--omit=dev` instead.
+8 timing config:load:cli Completed in 2ms
+9 timing config:load:env Completed in 0ms
+10 timing config:load:file:/data/.npmrc Completed in 0ms
+11 timing config:load:project Completed in 3ms
+12 timing config:load:file:/usr/src/node-red/.npmrc Completed in 0ms
+13 timing config:load:user Completed in 0ms
+14 timing config:load:file:/usr/local/etc/npmrc Completed in 2ms
+15 timing config:load:global Completed in 2ms
+16 timing config:load:validate Completed in 0ms
+17 timing config:load:credentials Completed in 1ms
+18 timing config:load:setEnvs Completed in 1ms
+19 timing config:load Completed in 13ms
+20 timing npm:load:configload Completed in 13ms
+21 timing npm:load:mkdirpcache Completed in 6ms
+22 timing npm:load:mkdirplogs Completed in 1ms
+23 verbose title npm install node-red-contrib-usbcamera@0.0.6
+24 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--production" "--engine-strict" "node-red-contrib-usbcamera@0.0.6"
+25 timing npm:load:setTitle Completed in 1ms
+26 timing config:load:flatten Completed in 3ms
+27 timing npm:load:display Completed in 5ms
+28 verbose logfile logs-max:10 dir:/data/.npm/_logs
+29 verbose logfile /data/.npm/_logs/2023-07-28T03_29_20_920Z-debug-0.log
+30 timing npm:load:logFile Completed in 4ms
+31 timing npm:load:timers Completed in 0ms
+32 timing npm:load:configScope Completed in 0ms
+33 timing npm:load Completed in 31ms
+34 timing arborist:ctor Completed in 1ms
+35 silly logfile start cleaning logs, removing 4 files
+36 silly logfile done cleaning log files
+37 timing idealTree:init Completed in 105ms
+38 timing idealTree:userRequests Completed in 2ms
+39 silly idealTree buildDeps
+40 silly fetch manifest node-red-contrib-usbcamera@0.0.6
+41 timing arborist:ctor Completed in 0ms
+42 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-usbcamera 1203ms (cache miss)
+43 silly placeDep ROOT node-red-contrib-usbcamera@0.0.6 OK for: node-red-project@0.0.1 want: 0.0.6
+44 silly fetch manifest fs-extra@^4.0.2
+45 silly fetch manifest node-webcam@^0.4.3
+46 silly fetch manifest os@^0.1.1
+47 silly fetch manifest uuid@^3.1.0
+48 http fetch GET 200 https://registry.npmjs.org/fs-extra 101ms (cache miss)
+49 http fetch GET 200 https://registry.npmjs.org/uuid 150ms (cache miss)
+50 http fetch GET 200 https://registry.npmjs.org/os 167ms (cache miss)
+51 http fetch GET 200 https://registry.npmjs.org/node-webcam 1263ms (cache miss)
+52 timing idealTree:#root Completed in 2477ms
+53 silly placeDep ROOT fs-extra@4.0.3 OK for: node-red-contrib-usbcamera@0.0.6 want: ^4.0.2
+54 silly placeDep ROOT node-webcam@0.4.6 OK for: node-red-contrib-usbcamera@0.0.6 want: ^0.4.3
+55 silly placeDep ROOT os@0.1.2 OK for: node-red-contrib-usbcamera@0.0.6 want: ^0.1.1
+56 silly placeDep ROOT uuid@3.4.0 OK for: node-red-contrib-usbcamera@0.0.6 want: ^3.1.0
+57 silly fetch manifest graceful-fs@^4.1.2
+58 silly fetch manifest jsonfile@^4.0.0
+59 silly fetch manifest universalify@^0.1.0
+60 silly fetch manifest nopt@*
+61 http fetch GET 200 https://registry.npmjs.org/universalify 114ms (cache miss)
+62 http fetch GET 200 https://registry.npmjs.org/nopt 115ms (cache miss)
+63 http fetch GET 200 https://registry.npmjs.org/jsonfile 120ms (cache miss)
+64 http fetch GET 200 https://registry.npmjs.org/graceful-fs 125ms (cache miss)
+65 timing idealTree:node_modules/node-red-contrib-usbcamera Completed in 132ms
+66 silly placeDep ROOT graceful-fs@4.2.11 OK for: fs-extra@4.0.3 want: ^4.1.2
+67 silly placeDep ROOT jsonfile@4.0.0 OK for: fs-extra@4.0.3 want: ^4.0.0
+68 silly placeDep ROOT universalify@0.1.2 OK for: fs-extra@4.0.3 want: ^0.1.0
+69 timing idealTree:node_modules/fs-extra Completed in 5ms
+70 timing idealTree:node_modules/graceful-fs Completed in 0ms
+71 timing idealTree:node_modules/jsonfile Completed in 0ms
+72 silly placeDep ROOT nopt@7.2.0 OK for: node-webcam@0.4.6 want: *
+73 silly fetch manifest abbrev@^2.0.0
+74 http fetch GET 200 https://registry.npmjs.org/abbrev 70ms (cache miss)
+75 timing idealTree:node_modules/node-webcam Completed in 73ms
+76 silly placeDep ROOT abbrev@2.0.0 OK for: nopt@7.2.0 want: ^2.0.0
+77 timing idealTree:node_modules/nopt Completed in 5ms
+78 timing idealTree:node_modules/abbrev Completed in 0ms
+79 timing idealTree:node_modules/os Completed in 0ms
+80 timing idealTree:node_modules/universalify Completed in 0ms
+81 timing idealTree:node_modules/uuid Completed in 0ms
+82 timing idealTree:buildDeps Completed in 2699ms
+83 timing idealTree:fixDepFlags Completed in 7ms
+84 timing idealTree Completed in 2822ms
+85 timing reify:loadTrees Completed in 2824ms
+86 timing reify:diffTrees Completed in 15ms
+87 silly reify moves {}
+88 timing reify:retireShallow Completed in 2ms
+89 timing reify:createSparse Completed in 7ms
+90 timing reify:trashOmits Completed in 0ms
+91 timing reify:loadBundles Completed in 0ms
+92 silly tarball no local data for abbrev@https://registry.npmjs.org/abbrev/-/abbrev-2.0.0.tgz. Extracting by manifest.
+93 silly tarball no local data for jsonfile@https://registry.npmjs.org/jsonfile/-/jsonfile-4.0.0.tgz. Extracting by manifest.
+94 silly tarball no local data for universalify@https://registry.npmjs.org/universalify/-/universalify-0.1.2.tgz. Extracting by manifest.
+95 silly tarball no local data for nopt@https://registry.npmjs.org/nopt/-/nopt-7.2.0.tgz. Extracting by manifest.
+96 silly tarball no local data for os@https://registry.npmjs.org/os/-/os-0.1.2.tgz. Extracting by manifest.
+97 silly tarball no local data for graceful-fs@https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz. Extracting by manifest.
+98 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz. Extracting by manifest.
+99 silly tarball no local data for node-webcam@https://registry.npmjs.org/node-webcam/-/node-webcam-0.4.6.tgz. Extracting by manifest.
+100 silly tarball no local data for fs-extra@https://registry.npmjs.org/fs-extra/-/fs-extra-4.0.3.tgz. Extracting by manifest.
+101 silly tarball no local data for node-red-contrib-usbcamera@https://registry.npmjs.org/node-red-contrib-usbcamera/-/node-red-contrib-usbcamera-0.0.6.tgz. Extracting by manifest.
+102 http fetch GET 200 https://registry.npmjs.org/abbrev/-/abbrev-2.0.0.tgz 91ms (cache miss)
+103 timing reifyNode:node_modules/abbrev Completed in 108ms
+104 http fetch GET 200 https://registry.npmjs.org/jsonfile/-/jsonfile-4.0.0.tgz 90ms (cache miss)
+105 timing reifyNode:node_modules/jsonfile Completed in 108ms
+106 http fetch GET 200 https://registry.npmjs.org/universalify/-/universalify-0.1.2.tgz 89ms (cache miss)
+107 timing reifyNode:node_modules/universalify Completed in 108ms
+108 http fetch GET 200 https://registry.npmjs.org/nopt/-/nopt-7.2.0.tgz 88ms (cache miss)
+109 timing reifyNode:node_modules/nopt Completed in 108ms
+110 http fetch GET 200 https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz 146ms (cache miss)
+111 timing reifyNode:node_modules/graceful-fs Completed in 167ms
+112 http fetch GET 200 https://registry.npmjs.org/os/-/os-0.1.2.tgz 151ms (cache miss)
+113 timing reifyNode:node_modules/os Completed in 172ms
+114 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz 151ms (cache miss)
+115 warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+116 timing reifyNode:node_modules/uuid Completed in 173ms
+117 http fetch GET 200 https://registry.npmjs.org/fs-extra/-/fs-extra-4.0.3.tgz 172ms (cache miss)
+118 timing reifyNode:node_modules/fs-extra Completed in 196ms
+119 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-usbcamera/-/node-red-contrib-usbcamera-0.0.6.tgz 1042ms (cache miss)
+120 timing reifyNode:node_modules/node-red-contrib-usbcamera Completed in 1066ms
+121 http fetch GET 200 https://registry.npmjs.org/node-webcam/-/node-webcam-0.4.6.tgz 1991ms (cache miss)
+122 timing reifyNode:node_modules/node-webcam Completed in 2014ms
+123 timing reify:unpack Completed in 2016ms
+124 timing reify:unretire Completed in 0ms
+125 timing build:queue Completed in 1ms
+126 timing build:link:node_modules/node-webcam Completed in 3ms
+127 timing build:link:node_modules/uuid Completed in 2ms
+128 timing build:link:node_modules/nopt Completed in 2ms
+129 timing build:link Completed in 3ms
+130 timing build:deps Completed in 4ms
+131 timing build Completed in 5ms
+132 timing reify:build Completed in 5ms
+133 timing reify:trash Completed in 0ms
+134 timing reify:save Completed in 40ms
+135 timing reify Completed in 4933ms
+136 silly ADD node_modules/abbrev
+137 silly ADD node_modules/nopt
+138 silly ADD node_modules/universalify
+139 silly ADD node_modules/jsonfile
+140 silly ADD node_modules/graceful-fs
+141 silly ADD node_modules/uuid
+142 silly ADD node_modules/os
+143 silly ADD node_modules/node-webcam
+144 silly ADD node_modules/fs-extra
+145 silly ADD node_modules/node-red-contrib-usbcamera
+146 timing command:install Completed in 4937ms
+147 verbose exit 0
+148 timing npm Completed in 5118ms
+149 info ok

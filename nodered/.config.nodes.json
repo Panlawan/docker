@@ -676,5 +676,208 @@
                 "file": "/data/node_modules/node-red-contrib-influxdb/influxdb.js"
             }
         }
+    },
+    "node-red-contrib-modbus": {
+        "name": "node-red-contrib-modbus",
+        "version": "5.26.0",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "Modbus-Client": {
+                "name": "Modbus-Client",
+                "types": [
+                    "modbus-client"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-modbus",
+                "file": "/data/node_modules/node-red-contrib-modbus/modbus/modbus-client.js"
+            },
+            "Modbus-Response": {
+                "name": "Modbus-Response",
+                "types": [
+                    "modbus-response"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-modbus",
+                "file": "/data/node_modules/node-red-contrib-modbus/modbus/modbus-response.js"
+            },
+            "Modbus-Read": {
+                "name": "Modbus-Read",
+                "types": [
+                    "modbus-read"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-modbus",
+                "file": "/data/node_modules/node-red-contrib-modbus/modbus/modbus-read.js"
+            },
+            "Modbus-Getter": {
+                "name": "Modbus-Getter",
+                "types": [
+                    "modbus-getter"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-modbus",
+                "file": "/data/node_modules/node-red-contrib-modbus/modbus/modbus-getter.js"
+            },
+            "Modbus-Flex-Getter": {
+                "name": "Modbus-Flex-Getter",
+                "types": [
+                    "modbus-flex-getter"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-modbus",
+                "file": "/data/node_modules/node-red-contrib-modbus/modbus/modbus-flex-getter.js"
+            },
+            "Modbus-Write": {
+                "name": "Modbus-Write",
+                "types": [
+                    "modbus-write"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-modbus",
+                "file": "/data/node_modules/node-red-contrib-modbus/modbus/modbus-write.js"
+            },
+            "Modbus-Flex-Write": {
+                "name": "Modbus-Flex-Write",
+                "types": [
+                    "modbus-flex-write"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-modbus",
+                "file": "/data/node_modules/node-red-contrib-modbus/modbus/modbus-flex-write.js"
+            },
+            "Modbus-Server": {
+                "name": "Modbus-Server",
+                "types": [
+                    "modbus-server"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-modbus",
+                "file": "/data/node_modules/node-red-contrib-modbus/modbus/modbus-server.js"
+            },
+            "Modbus-Flex-Server": {
+                "name": "Modbus-Flex-Server",
+                "types": [
+                    "modbus-flex-server"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-modbus",
+                "file": "/data/node_modules/node-red-contrib-modbus/modbus/modbus-flex-server.js"
+            },
+            "Modbus-Queue-Info": {
+                "name": "Modbus-Queue-Info",
+                "types": [
+                    "modbus-queue-info"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-modbus",
+                "file": "/data/node_modules/node-red-contrib-modbus/modbus/modbus-queue-info.js"
+            },
+            "Modbus-Flex-Connector": {
+                "name": "Modbus-Flex-Connector",
+                "types": [
+                    "modbus-flex-connector"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-modbus",
+                "file": "/data/node_modules/node-red-contrib-modbus/modbus/modbus-flex-connector.js"
+            },
+            "Modbus-IO-Config": {
+                "name": "Modbus-IO-Config",
+                "types": [
+                    "modbus-io-config"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-modbus",
+                "file": "/data/node_modules/node-red-contrib-modbus/modbus/modbus-io-config.js"
+            },
+            "Modbus-Response-Filter": {
+                "name": "Modbus-Response-Filter",
+                "types": [
+                    "modbus-response-filter"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-modbus",
+                "file": "/data/node_modules/node-red-contrib-modbus/modbus/modbus-response-filter.js"
+            },
+            "Modbus-Flex-Sequencer": {
+                "name": "Modbus-Flex-Sequencer",
+                "types": [
+                    "modbus-flex-sequencer"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-modbus",
+                "file": "/data/node_modules/node-red-contrib-modbus/modbus/modbus-flex-sequencer.js"
+            }
+        }
+    },
+    "node-red-contrib-usbcamera": {
+        "name": "node-red-contrib-usbcamera",
+        "version": "0.0.6",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "usbcamera": {
+                "name": "usbcamera",
+                "types": [
+                    "usbcamera"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-usbcamera",
+                "file": "/data/node_modules/node-red-contrib-usbcamera/usbcamera.js"
+            }
+        }
+    },
+    "node-red-node-serialport": {
+        "name": "node-red-node-serialport",
+        "version": "1.0.4",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "serialport": {
+                "name": "serialport",
+                "types": [
+                    "serial in",
+                    "serial out",
+                    "serial request",
+                    "serial-port"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-node-serialport",
+                "file": "/data/node_modules/node-red-node-serialport/25-serial.js"
+            }
+        }
     }
 }

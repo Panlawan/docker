@@ -1,0 +1,221 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@8.19.4
+2 info using node@v16.20.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 2ms
+6 timing config:load:builtin Completed in 2ms
+7 warn config production Use `--omit=dev` instead.
+8 timing config:load:cli Completed in 3ms
+9 timing config:load:env Completed in 0ms
+10 timing config:load:file:/data/.npmrc Completed in 1ms
+11 timing config:load:project Completed in 5ms
+12 timing config:load:file:/usr/src/node-red/.npmrc Completed in 0ms
+13 timing config:load:user Completed in 0ms
+14 timing config:load:file:/usr/local/etc/npmrc Completed in 1ms
+15 timing config:load:global Completed in 2ms
+16 timing config:load:validate Completed in 0ms
+17 timing config:load:credentials Completed in 1ms
+18 timing config:load:setEnvs Completed in 1ms
+19 timing config:load Completed in 15ms
+20 timing npm:load:configload Completed in 16ms
+21 timing npm:load:mkdirpcache Completed in 1ms
+22 timing npm:load:mkdirplogs Completed in 1ms
+23 verbose title npm install node-red-node-serialport@1.0.4
+24 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--production" "--engine-strict" "node-red-node-serialport@1.0.4"
+25 timing npm:load:setTitle Completed in 2ms
+26 timing config:load:flatten Completed in 2ms
+27 timing npm:load:display Completed in 4ms
+28 verbose logfile logs-max:10 dir:/data/.npm/_logs
+29 verbose logfile /data/.npm/_logs/2023-08-03T02_38_54_911Z-debug-0.log
+30 timing npm:load:logFile Completed in 4ms
+31 timing npm:load:timers Completed in 0ms
+32 timing npm:load:configScope Completed in 0ms
+33 timing npm:load Completed in 29ms
+34 timing arborist:ctor Completed in 1ms
+35 silly logfile start cleaning logs, removing 2 files
+36 silly logfile done cleaning log files
+37 timing idealTree:init Completed in 105ms
+38 timing idealTree:userRequests Completed in 1ms
+39 silly idealTree buildDeps
+40 silly fetch manifest node-red-node-serialport@1.0.4
+41 timing arborist:ctor Completed in 1ms
+42 http fetch GET 200 https://registry.npmjs.org/node-red-node-serialport 1675ms (cache miss)
+43 silly placeDep ROOT node-red-node-serialport@1.0.4 OK for: node-red-project@0.0.1 want: 1.0.4
+44 silly fetch manifest serialport@^11.0.0
+45 http fetch GET 200 https://registry.npmjs.org/serialport 1278ms (cache updated)
+46 timing idealTree:#root Completed in 2977ms
+47 silly placeDep node_modules/node-red-node-serialport serialport@11.0.1 OK for: node-red-node-serialport@1.0.4 want: ^11.0.0
+48 silly fetch manifest @serialport/bindings-cpp@11.0.3
+49 silly fetch manifest @serialport/parser-byte-length@11.0.1
+50 silly fetch manifest @serialport/parser-cctalk@11.0.1
+51 silly fetch manifest @serialport/parser-delimiter@11.0.1
+52 silly fetch manifest @serialport/parser-inter-byte-timeout@11.0.1
+53 silly fetch manifest @serialport/parser-packet-length@11.0.1
+54 silly fetch manifest @serialport/parser-readline@11.0.1
+55 silly fetch manifest @serialport/parser-ready@11.0.1
+56 silly fetch manifest @serialport/parser-regex@11.0.1
+57 silly fetch manifest @serialport/parser-slip-encoder@11.0.1
+58 silly fetch manifest @serialport/parser-spacepacket@11.0.1
+59 silly fetch manifest @serialport/stream@11.0.1
+60 silly fetch manifest debug@4.3.4
+61 http fetch GET 200 https://registry.npmjs.org/debug 321ms (cache revalidated)
+62 http fetch GET 200 https://registry.npmjs.org/@serialport%2fparser-cctalk 2206ms (cache updated)
+63 http fetch GET 200 https://registry.npmjs.org/@serialport%2fparser-delimiter 2372ms (cache updated)
+64 http fetch GET 200 https://registry.npmjs.org/@serialport%2fparser-packet-length 2370ms (cache updated)
+65 http fetch GET 200 https://registry.npmjs.org/@serialport%2fparser-spacepacket 2364ms (cache updated)
+66 http fetch GET 200 https://registry.npmjs.org/@serialport%2fparser-slip-encoder 2365ms (cache updated)
+67 http fetch GET 200 https://registry.npmjs.org/@serialport%2fbindings-cpp 2381ms (cache revalidated)
+68 http fetch GET 200 https://registry.npmjs.org/@serialport%2fstream 2370ms (cache updated)
+69 http fetch GET 200 https://registry.npmjs.org/@serialport%2fparser-regex 2374ms (cache updated)
+70 http fetch GET 200 https://registry.npmjs.org/@serialport%2fparser-readline 2388ms (cache updated)
+71 http fetch GET 200 https://registry.npmjs.org/@serialport%2fparser-inter-byte-timeout 2392ms (cache updated)
+72 http fetch GET 200 https://registry.npmjs.org/@serialport%2fparser-byte-length 2400ms (cache updated)
+73 http fetch GET 200 https://registry.npmjs.org/@serialport%2fparser-ready 2471ms (cache updated)
+74 timing idealTree:node_modules/node-red-node-serialport Completed in 2506ms
+75 silly placeDep node_modules/node-red-node-serialport @serialport/bindings-cpp@11.0.3 OK for: serialport@11.0.1 want: 11.0.3
+76 silly placeDep node_modules/node-red-node-serialport @serialport/parser-byte-length@11.0.1 OK for: serialport@11.0.1 want: 11.0.1
+77 silly placeDep node_modules/node-red-node-serialport @serialport/parser-cctalk@11.0.1 OK for: serialport@11.0.1 want: 11.0.1
+78 silly placeDep node_modules/node-red-node-serialport @serialport/parser-delimiter@11.0.1 OK for: serialport@11.0.1 want: 11.0.1
+79 silly placeDep node_modules/node-red-node-serialport @serialport/parser-inter-byte-timeout@11.0.1 OK for: serialport@11.0.1 want: 11.0.1
+80 silly placeDep node_modules/node-red-node-serialport @serialport/parser-packet-length@11.0.1 OK for: serialport@11.0.1 want: 11.0.1
+81 silly placeDep node_modules/node-red-node-serialport @serialport/parser-readline@11.0.1 OK for: serialport@11.0.1 want: 11.0.1
+82 silly placeDep node_modules/node-red-node-serialport @serialport/parser-ready@11.0.1 OK for: serialport@11.0.1 want: 11.0.1
+83 silly placeDep node_modules/node-red-node-serialport @serialport/parser-regex@11.0.1 OK for: serialport@11.0.1 want: 11.0.1
+84 silly placeDep node_modules/node-red-node-serialport @serialport/parser-slip-encoder@11.0.1 OK for: serialport@11.0.1 want: 11.0.1
+85 silly placeDep node_modules/node-red-node-serialport @serialport/parser-spacepacket@11.0.1 OK for: serialport@11.0.1 want: 11.0.1
+86 silly placeDep node_modules/node-red-node-serialport @serialport/stream@11.0.1 OK for: serialport@11.0.1 want: 11.0.1
+87 silly placeDep node_modules/node-red-node-serialport debug@4.3.4 OK for: serialport@11.0.1 want: 4.3.4
+88 silly fetch manifest @serialport/bindings-interface@1.2.2
+89 silly fetch manifest @serialport/parser-readline@11.0.0
+90 silly fetch manifest node-addon-api@6.1.0
+91 silly fetch manifest ms@2.1.2
+92 http fetch GET 200 https://registry.npmjs.org/ms 151ms (cache revalidated)
+93 http fetch GET 200 https://registry.npmjs.org/node-addon-api 154ms (cache revalidated)
+94 http fetch GET 200 https://registry.npmjs.org/@serialport%2fbindings-interface 2165ms (cache revalidated)
+95 timing idealTree:node_modules/node-red-node-serialport/node_modules/serialport Completed in 2203ms
+96 silly placeDep node_modules/node-red-node-serialport @serialport/bindings-interface@1.2.2 OK for: @serialport/bindings-cpp@11.0.3 want: 1.2.2
+97 silly placeDep node_modules/node-red-node-serialport/node_modules/@serialport/bindings-cpp @serialport/parser-readline@11.0.0 OK for: @serialport/bindings-cpp@11.0.3 want: 11.0.0
+98 silly placeDep node_modules/node-red-node-serialport node-addon-api@6.1.0 OK for: @serialport/bindings-cpp@11.0.3 want: 6.1.0
+99 silly fetch manifest @serialport/parser-delimiter@11.0.0
+100 timing idealTree:node_modules/node-red-node-serialport/node_modules/@serialport/bindings-cpp Completed in 21ms
+101 timing idealTree:node_modules/node-red-node-serialport/node_modules/@serialport/bindings-interface Completed in 0ms
+102 timing idealTree:node_modules/node-red-node-serialport/node_modules/@serialport/parser-byte-length Completed in 1ms
+103 timing idealTree:node_modules/node-red-node-serialport/node_modules/@serialport/parser-cctalk Completed in 0ms
+104 timing idealTree:node_modules/node-red-node-serialport/node_modules/@serialport/parser-delimiter Completed in 1ms
+105 timing idealTree:node_modules/node-red-node-serialport/node_modules/@serialport/parser-inter-byte-timeout Completed in 0ms
+106 timing idealTree:node_modules/node-red-node-serialport/node_modules/@serialport/parser-packet-length Completed in 0ms
+107 timing idealTree:node_modules/node-red-node-serialport/node_modules/@serialport/parser-readline Completed in 0ms
+108 timing idealTree:node_modules/node-red-node-serialport/node_modules/@serialport/parser-ready Completed in 0ms
+109 timing idealTree:node_modules/node-red-node-serialport/node_modules/@serialport/parser-regex Completed in 0ms
+110 timing idealTree:node_modules/node-red-node-serialport/node_modules/@serialport/parser-slip-encoder Completed in 0ms
+111 timing idealTree:node_modules/node-red-node-serialport/node_modules/@serialport/parser-spacepacket Completed in 1ms
+112 timing idealTree:node_modules/node-red-node-serialport/node_modules/@serialport/stream Completed in 0ms
+113 silly placeDep node_modules/node-red-node-serialport ms@2.1.2 OK for: debug@4.3.4 want: 2.1.2
+114 timing idealTree:node_modules/node-red-node-serialport/node_modules/debug Completed in 3ms
+115 timing idealTree:node_modules/node-red-node-serialport/node_modules/ms Completed in 0ms
+116 timing idealTree:node_modules/node-red-node-serialport/node_modules/node-addon-api Completed in 0ms
+117 silly placeDep node_modules/node-red-node-serialport/node_modules/@serialport/bindings-cpp @serialport/parser-delimiter@11.0.0 OK for: @serialport/parser-readline@11.0.0 want: 11.0.0
+118 timing idealTree:node_modules/node-red-node-serialport/node_modules/@serialport/bindings-cpp/node_modules/@serialport/parser-readline Completed in 3ms
+119 timing idealTree:node_modules/node-red-node-serialport/node_modules/@serialport/bindings-cpp/node_modules/@serialport/parser-delimiter Completed in 0ms
+120 timing idealTree:buildDeps Completed in 7721ms
+121 timing idealTree:fixDepFlags Completed in 4ms
+122 timing idealTree Completed in 7838ms
+123 timing reify:loadTrees Completed in 7839ms
+124 timing reify:diffTrees Completed in 14ms
+125 silly reify moves {}
+126 timing reify:retireShallow Completed in 2ms
+127 timing reify:createSparse Completed in 18ms
+128 timing reify:trashOmits Completed in 0ms
+129 timing reify:loadBundles Completed in 0ms
+130 silly tarball no local data for node-red-node-serialport@https://registry.npmjs.org/node-red-node-serialport/-/node-red-node-serialport-1.0.4.tgz. Extracting by manifest.
+131 silly tarball no local data for node-addon-api@https://registry.npmjs.org/node-addon-api/-/node-addon-api-6.1.0.tgz. Extracting by manifest.
+132 silly tarball no local data for @serialport/parser-spacepacket@https://registry.npmjs.org/@serialport/parser-spacepacket/-/parser-spacepacket-11.0.1.tgz. Extracting by manifest.
+133 silly tarball no local data for @serialport/parser-regex@https://registry.npmjs.org/@serialport/parser-regex/-/parser-regex-11.0.1.tgz. Extracting by manifest.
+134 silly tarball no local data for @serialport/parser-slip-encoder@https://registry.npmjs.org/@serialport/parser-slip-encoder/-/parser-slip-encoder-11.0.1.tgz. Extracting by manifest.
+135 silly tarball no local data for @serialport/parser-ready@https://registry.npmjs.org/@serialport/parser-ready/-/parser-ready-11.0.1.tgz. Extracting by manifest.
+136 silly tarball no local data for @serialport/parser-readline@https://registry.npmjs.org/@serialport/parser-readline/-/parser-readline-11.0.1.tgz. Extracting by manifest.
+137 silly tarball no local data for @serialport/parser-inter-byte-timeout@https://registry.npmjs.org/@serialport/parser-inter-byte-timeout/-/parser-inter-byte-timeout-11.0.1.tgz. Extracting by manifest.
+138 silly tarball no local data for @serialport/parser-packet-length@https://registry.npmjs.org/@serialport/parser-packet-length/-/parser-packet-length-11.0.1.tgz. Extracting by manifest.
+139 silly tarball no local data for @serialport/stream@https://registry.npmjs.org/@serialport/stream/-/stream-11.0.1.tgz. Extracting by manifest.
+140 silly tarball no local data for @serialport/parser-cctalk@https://registry.npmjs.org/@serialport/parser-cctalk/-/parser-cctalk-11.0.1.tgz. Extracting by manifest.
+141 silly tarball no local data for @serialport/parser-delimiter@https://registry.npmjs.org/@serialport/parser-delimiter/-/parser-delimiter-11.0.1.tgz. Extracting by manifest.
+142 silly tarball no local data for @serialport/parser-readline@https://registry.npmjs.org/@serialport/parser-readline/-/parser-readline-11.0.0.tgz. Extracting by manifest.
+143 silly tarball no local data for @serialport/parser-byte-length@https://registry.npmjs.org/@serialport/parser-byte-length/-/parser-byte-length-11.0.1.tgz. Extracting by manifest.
+144 silly tarball no local data for @serialport/parser-delimiter@https://registry.npmjs.org/@serialport/parser-delimiter/-/parser-delimiter-11.0.0.tgz. Extracting by manifest.
+145 silly tarball no local data for serialport@https://registry.npmjs.org/serialport/-/serialport-11.0.1.tgz. Extracting by manifest.
+146 silly tarball no local data for @serialport/bindings-cpp@https://registry.npmjs.org/@serialport/bindings-cpp/-/bindings-cpp-11.0.3.tgz. Extracting by manifest.
+147 timing reifyNode:node_modules/node-red-node-serialport/node_modules/ms Completed in 76ms
+148 timing reifyNode:node_modules/node-red-node-serialport/node_modules/@serialport/bindings-interface Completed in 77ms
+149 timing reifyNode:node_modules/node-red-node-serialport/node_modules/debug Completed in 78ms
+150 http fetch GET 200 https://registry.npmjs.org/node-red-node-serialport/-/node-red-node-serialport-1.0.4.tgz 204ms (cache miss)
+151 timing reifyNode:node_modules/node-red-node-serialport Completed in 224ms
+152 http fetch GET 200 https://registry.npmjs.org/node-addon-api/-/node-addon-api-6.1.0.tgz 205ms (cache miss)
+153 timing reifyNode:node_modules/node-red-node-serialport/node_modules/node-addon-api Completed in 227ms
+154 http fetch GET 200 https://registry.npmjs.org/serialport/-/serialport-11.0.1.tgz 255ms (cache miss)
+155 timing reifyNode:node_modules/node-red-node-serialport/node_modules/serialport Completed in 299ms
+156 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-delimiter/-/parser-delimiter-11.0.1.tgz 1233ms (cache miss)
+157 timing reifyNode:node_modules/node-red-node-serialport/node_modules/@serialport/parser-delimiter Completed in 1271ms
+158 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-ready/-/parser-ready-11.0.1.tgz 1244ms (cache miss)
+159 timing reifyNode:node_modules/node-red-node-serialport/node_modules/@serialport/parser-ready Completed in 1272ms
+160 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-readline/-/parser-readline-11.0.1.tgz 1243ms (cache miss)
+161 timing reifyNode:node_modules/node-red-node-serialport/node_modules/@serialport/parser-readline Completed in 1273ms
+162 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-cctalk/-/parser-cctalk-11.0.1.tgz 1239ms (cache miss)
+163 timing reifyNode:node_modules/node-red-node-serialport/node_modules/@serialport/parser-cctalk Completed in 1274ms
+164 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-slip-encoder/-/parser-slip-encoder-11.0.1.tgz 1251ms (cache miss)
+165 timing reifyNode:node_modules/node-red-node-serialport/node_modules/@serialport/parser-slip-encoder Completed in 1277ms
+166 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-spacepacket/-/parser-spacepacket-11.0.1.tgz 1256ms (cache miss)
+167 timing reifyNode:node_modules/node-red-node-serialport/node_modules/@serialport/parser-spacepacket Completed in 1278ms
+168 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-regex/-/parser-regex-11.0.1.tgz 1254ms (cache miss)
+169 timing reifyNode:node_modules/node-red-node-serialport/node_modules/@serialport/parser-regex Completed in 1279ms
+170 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-readline/-/parser-readline-11.0.0.tgz 1240ms (cache miss)
+171 timing reifyNode:node_modules/node-red-node-serialport/node_modules/@serialport/bindings-cpp/node_modules/@serialport/parser-readline Completed in 1279ms
+172 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-packet-length/-/parser-packet-length-11.0.1.tgz 1248ms (cache miss)
+173 timing reifyNode:node_modules/node-red-node-serialport/node_modules/@serialport/parser-packet-length Completed in 1280ms
+174 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-inter-byte-timeout/-/parser-inter-byte-timeout-11.0.1.tgz 1251ms (cache miss)
+175 timing reifyNode:node_modules/node-red-node-serialport/node_modules/@serialport/parser-inter-byte-timeout Completed in 1281ms
+176 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-byte-length/-/parser-byte-length-11.0.1.tgz 1241ms (cache miss)
+177 timing reifyNode:node_modules/node-red-node-serialport/node_modules/@serialport/parser-byte-length Completed in 1282ms
+178 http fetch GET 200 https://registry.npmjs.org/@serialport/stream/-/stream-11.0.1.tgz 1248ms (cache miss)
+179 timing reifyNode:node_modules/node-red-node-serialport/node_modules/@serialport/stream Completed in 1282ms
+180 http fetch GET 200 https://registry.npmjs.org/@serialport/bindings-cpp/-/bindings-cpp-11.0.3.tgz 1466ms (cache miss)
+181 timing reifyNode:node_modules/node-red-node-serialport/node_modules/@serialport/bindings-cpp Completed in 1511ms
+182 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-delimiter/-/parser-delimiter-11.0.0.tgz 2453ms (cache miss)
+183 timing reifyNode:node_modules/node-red-node-serialport/node_modules/@serialport/bindings-cpp/node_modules/@serialport/parser-delimiter Completed in 2496ms
+184 timing reify:unpack Completed in 2497ms
+185 timing reify:unretire Completed in 2ms
+186 timing build:queue Completed in 29ms
+187 info run @serialport/bindings-cpp@11.0.3 install node_modules/node-red-node-serialport/node_modules/@serialport/bindings-cpp node-gyp-build
+188 info run @serialport/bindings-cpp@11.0.3 install { code: 0, signal: null }
+189 timing build:run:install:node_modules/node-red-node-serialport/node_modules/@serialport/bindings-cpp Completed in 189ms
+190 timing build:run:install Completed in 193ms
+191 timing build:deps Completed in 227ms
+192 timing build Completed in 227ms
+193 timing reify:build Completed in 230ms
+194 timing reify:trash Completed in 0ms
+195 timing reify:save Completed in 43ms
+196 timing reify Completed in 10671ms
+197 silly ADD node_modules/node-red-node-serialport
+198 silly ADD node_modules/node-red-node-serialport/node_modules/ms
+199 silly ADD node_modules/node-red-node-serialport/node_modules/node-addon-api
+200 silly ADD node_modules/node-red-node-serialport/node_modules/@serialport/bindings-interface
+201 silly ADD node_modules/node-red-node-serialport/node_modules/debug
+202 silly ADD node_modules/node-red-node-serialport/node_modules/@serialport/stream
+203 silly ADD node_modules/node-red-node-serialport/node_modules/@serialport/parser-spacepacket
+204 silly ADD node_modules/node-red-node-serialport/node_modules/@serialport/parser-slip-encoder
+205 silly ADD node_modules/node-red-node-serialport/node_modules/@serialport/parser-regex
+206 silly ADD node_modules/node-red-node-serialport/node_modules/@serialport/parser-ready
+207 silly ADD node_modules/node-red-node-serialport/node_modules/@serialport/parser-readline
+208 silly ADD node_modules/node-red-node-serialport/node_modules/@serialport/parser-packet-length
+209 silly ADD node_modules/node-red-node-serialport/node_modules/@serialport/parser-inter-byte-timeout
+210 silly ADD node_modules/node-red-node-serialport/node_modules/@serialport/parser-delimiter
+211 silly ADD node_modules/node-red-node-serialport/node_modules/@serialport/parser-cctalk
+212 silly ADD node_modules/node-red-node-serialport/node_modules/@serialport/parser-byte-length
+213 silly ADD node_modules/node-red-node-serialport/node_modules/@serialport/bindings-cpp
+214 silly ADD node_modules/node-red-node-serialport/node_modules/@serialport/bindings-cpp/node_modules/@serialport/parser-delimiter
+215 silly ADD node_modules/node-red-node-serialport/node_modules/@serialport/bindings-cpp/node_modules/@serialport/parser-readline
+216 silly ADD node_modules/node-red-node-serialport/node_modules/serialport
+217 timing command:install Completed in 10675ms
+218 verbose exit 0
+219 timing npm Completed in 10934ms
+220 info ok
