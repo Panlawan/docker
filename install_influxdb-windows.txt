@@ -1,4 +1,4 @@
-wget https://dl.influxdata.com/influxdb/releases/influxdb-1.8.10_windows_amd64.zip
+wget https://dl.influxdata.com/influxdb/releases/influxdb-1.8.10_windows_amd64.zip -UseBasicParsing -OutFile influxdb-1.8.10_windows_amd64.zip
 extract file 
 run influxd
 run influx...
